@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://gods-clothings.myshopify.com/:path*",
+      "permanent": false
+    }
+  ]
+}
