@@ -7,8 +7,7 @@ export default async function handler(req, res) {
   // -----------------------------
   // BASE URL
   // -----------------------------
-  const BASE_URL = "https://rvcreationstore.in";
-
+const BASE_URL = "https://love-five-rho-99.vercel.app";
   // -----------------------------
   // CASHFREE API
   // -----------------------------
