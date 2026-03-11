@@ -1,13 +1,13 @@
 FROM php:8.2-apache
 
-# Enable Apache rewrite (often needed)
+# Enable rewrite module
 RUN a2enmod rewrite
 
-# Install PHP extensions for MySQL
+# Install MySQL extensions
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
-# Copy your site files
-COPY . /var/www/html/
+# Copy website files
+COPY assets/_public_html/ /var/www/html/
 
-# Ensure correct permissions
+# Set permissions
 RUN chown -R www-data:www-data /var/www/html
